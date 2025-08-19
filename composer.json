@@ -1,0 +1,21 @@
+{
+    "name": "funkyduck/nijiecho",
+    "description": "A simple and fluent PHP library for styling CLI output.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Loïc JACQUES",
+            "email": "jacques_loic@funkyduck.be",
+            "homepage": "https://funkyduck.be"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "FunkyDuck\\NijiEcho\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1"
+    }
+}
