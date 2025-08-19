@@ -27,6 +27,26 @@ class NijiEcho
     ];
     private static $optionCodes = [];
 
+    public static function success(string $text): self
+    {
+        return self::text($text)->color('light_green');
+    }
+
+    public static function error(string $text): self
+    {
+        return self::text($text)->color('white')->background('red');
+    }
+
+    public static function warning(string $text): self
+    {
+        return self::text($text)->color('yellow');
+    }
+
+    public static function info(string $text): self
+    {
+        return self::text($text)->color('light_cyan');
+    }
+
     public static function text(string $text): self 
     {
         $instance = new self();
