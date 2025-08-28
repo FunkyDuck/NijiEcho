@@ -34,7 +34,7 @@ class NijiEcho
 
     public static function error(string $text): self
     {
-        return self::text($text)->color('white')->background('red');
+        return self::text($text)->color('red');
     }
 
     public static function warning(string $text): self
